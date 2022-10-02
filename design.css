@@ -1,0 +1,19 @@
+#textInput{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width: 70%;
+}
+
+#addBtn {
+    background-color:mediumaquamarine;
+    border: none;
+    width: 10%;
+}
+
+#removeBtn {
+    background-color: red;
+    border: none;
+    width: 10%;
+}
