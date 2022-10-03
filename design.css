@@ -17,3 +17,10 @@
     border: none;
     width: 10%;
 }
+
+.taskDiv {
+    display: inline-block;
+    padding: 75px;
+    background-color: blanchedalmond;
+    margin: 5px;
+}
