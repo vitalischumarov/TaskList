@@ -29,6 +29,8 @@ function createElement() {
         // select a task which was clicked
         
         selectTask(div);
+        reorderMyTasks();
+        displayElement();
     })
     const span = document.createElement('span');
     const textNode = document.createTextNode(input.value);
@@ -44,6 +46,7 @@ function displayElement() {
     })
 }
 
+// all tasks will be deleted
 function removeAllTasks() {
     let myTasks = document.querySelectorAll('.taskDiv');
     myTasks.forEach(function(element) {
@@ -52,6 +55,17 @@ function removeAllTasks() {
     allTasksArray = [];
 }
 
+// the selected div will be deleted
 function selectTask(div) {
     div.remove();
+}
+
+// when a task is deleted, it gets all the rest divs and put the new available taks
+// in the array again. Then it displays the tasks.
+function reorderMyTasks() {
+    allTasksArray = [];
+    let myTasks = document.querySelectorAll('.taskDiv');
+    myTasks.forEach(function(element) {
+        allTasksArray.push(element);
+    })
 }
