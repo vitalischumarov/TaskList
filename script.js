@@ -14,6 +14,7 @@ addBtn.addEventListener('click', function() {
     } else {
         allTasksArray.push(createElement());
         displayElement();
+        input.value = '';
     }
 })
 
